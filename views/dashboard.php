@@ -82,5 +82,28 @@
             </div-nav-info>
         </nav>
     </div>
+
+    <div class="table-container">
+            <table>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Date Created</th>
+                    <th>Role</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>Alfreds Futterkiste</td>
+                    <td>Maria Anders</td>
+                    <td>Germany</td>
+                </tr>
+                <tr>
+                    <td>Centro comercial Moctezuma</td>
+                    <td>Francisco Chang</td>
+                    <td>Mexico</td>
+                </tr>
+            </table>
+        </div>
 </body>
 </html>

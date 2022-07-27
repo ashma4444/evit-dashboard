@@ -3,11 +3,11 @@
     position: absolute;
     width: 23rem;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 20px, rgba(0, 0, 0, 0.1) 0px 6px 6px;
+    z-index: 11;
     // transition: transform .7s, opacity 1s;
 
     .side-heading{
         padding: 1.7rem 3rem;
-        border-bottom: 1px solid #0000;
         h2{
             font-size: 1.5rem;
             font-weight: 800;
@@ -50,7 +50,7 @@
     align-items: center;
     i{
         font-size: 1.6rem;
-        color: #787575c9;
+        color: #999999;
     }
 
     input{
@@ -75,7 +75,7 @@
     display: none;
     i{
         font-size: 2.4rem;
-        color: #787575c9;
+        color: #999999;
     }
     @include for-phone-only {    
         display: block;
@@ -89,7 +89,7 @@
     justify-content: end;
     i{
         font-size: 1.6rem;
-        color: #787575c9;
+        color: #999999;
         margin-left: 1.5rem;
     }
 }
@@ -113,7 +113,38 @@
     i{
         font-weight: 600;
         font-size: 1.8rem;
-        color: #787575c9;
+        color: #999999;
         margin-right: .8rem;
+    }
+}
+
+.table-container{
+    font-size: 1.4rem;
+    color: #333333;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-left: 23rem;
+    margin-top: 5rem;
+    @include for-phone-only {    
+        margin-left: 0;
+    }
+
+    table{
+        background-color: #ffff;
+        padding: 2rem;
+        max-width: 60rem;
+        text-align: left;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-collapse: collapse ;
+        th{
+            font-weight: 700;
+        }
+    }
+
+    table th,td{
+        padding: 1rem 2rem;
+        border: 1px solid #000;
     }
 }
