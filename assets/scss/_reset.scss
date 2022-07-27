@@ -1,0 +1,33 @@
+@import './components/responsive';
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: $primary_font;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+html{
+  font-size: 62.5%;
+  @include for-phone-only {    
+      font-size: 56%;
+  }
+  @include for-tablet-portrait-up{
+      font-size: 58%;
+  }
+  @include for-tablet-landscape-up{
+    font-size: 60%;
+  }
+  @include for-desktop-up{
+    font-size: 62.5%;
+  }
+}
+
+body{
+    background-color: #f5f7f9;
+    ul li{
+        list-style: none;
+    }
+}

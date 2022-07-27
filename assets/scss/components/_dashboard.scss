@@ -1,0 +1,119 @@
+.side-bar{
+    height: 100vh;
+    position: absolute;
+    width: 23rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 20px, rgba(0, 0, 0, 0.1) 0px 6px 6px;
+    // transition: transform .7s, opacity 1s;
+
+    .side-heading{
+        padding: 1.7rem 3rem;
+        border-bottom: 1px solid #0000;
+        h2{
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: #2b2b2bd4;
+        }
+    }
+
+    @include for-phone-only {    
+        top: 6rem;
+        height: 90vh;
+        transform: translateX(-100%);
+        opacity:0;
+        transition: transform .7s, opacity 1s;
+    }
+}
+
+.show{
+    transform: translateX(0%);
+    opacity:1; 
+}
+
+.dashboard-container{
+    nav{
+        padding: 1.8rem 3rem;
+        background-color: #ffff;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 20px, rgba(0, 0, 0, 0.1) 0px 6px 6px;
+        display: flex;
+        margin-left: 23rem;
+        @include for-phone-only {    
+            margin: 0;
+            padding: 1.8rem 5rem;
+        }
+    }
+}
+
+.searchbox{
+    position: relative;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    i{
+        font-size: 1.6rem;
+        color: #787575c9;
+    }
+
+    input{
+        margin: 0;
+        width: 100%;
+        border: none;
+        margin-left: 1rem;
+    }
+
+    input:focus{
+        outline: none;
+    }
+
+    ::placeholder{
+        font-size: $p-size;
+    }
+}
+
+.ham-span{
+    width: 30%;
+    cursor:pointer;
+    display: none;
+    i{
+        font-size: 2.4rem;
+        color: #787575c9;
+    }
+    @include for-phone-only {    
+        display: block;
+    }
+}
+
+.nav-info{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    i{
+        font-size: 1.6rem;
+        color: #787575c9;
+        margin-left: 1.5rem;
+    }
+}
+
+.dashboard-p{
+    font-size: $p-size;
+    margin: 0;
+}
+
+.dashboard-li{
+    font-size: 1.6rem;
+}
+
+.side-list{
+    padding: 0 3rem;
+}
+
+.common-db-container{
+    display: flex;
+    margin-bottom: 3.4rem;
+    i{
+        font-weight: 600;
+        font-size: 1.8rem;
+        color: #787575c9;
+        margin-right: .8rem;
+    }
+}
